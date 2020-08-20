@@ -60,7 +60,7 @@ class GameboardView : UIView {
     }
     
     func setupBackground(backgroundColor bgColor: UIColor, tileColor: UIColor) {
-        backgroundColor = .green//bgColor
+        backgroundColor = bgColor
         var xCursor = tilePadding
         var yCursor: CGFloat
         let bgRadius = (cornerRadius >= 2) ? cornerRadius - 2 : 0
