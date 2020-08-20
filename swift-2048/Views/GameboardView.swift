@@ -89,7 +89,7 @@ class GameboardView : UIView {
         tile.layer.setAffineTransform(CGAffineTransform(scaleX: tilePopStartScale, y: tilePopStartScale))
         
         addSubview(tile)
-        bringSubview(toFront: tile)
+        bringSubviewToFront(tile)
         tiles[IndexPath(row: row, section: col)] = tile
         
         // Add to board

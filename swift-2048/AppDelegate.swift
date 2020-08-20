@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             
   var window: UIWindow?
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
     /// i added all this stuff and removed the default view. it had this stupid issue where the game appeared on a modal view
     /// so any swipe down just dismissed the game lol. Got this from a video on youtube and it works great!

@@ -10,6 +10,14 @@ import XCTest
 @testable import swift_2048
 
 class ModelTests: XCTestCase, GameModelProtocol {
+    func clearBoard() {
+        // TODO: make some test for clearning the board
+    }
+    
+    func shakeTheButton() {
+        // TODO: Not sure how I test shaking the button?
+    }
+    
 
   override func setUp() {
     super.setUp()
@@ -31,7 +39,7 @@ class ModelTests: XCTestCase, GameModelProtocol {
 
   func testCondense1() {
     let m = GameModel(dimension: 5, threshold: 2048, delegate: self)
-    var group = [TileObject.tile(1),
+    let group = [TileObject.tile(1),
       TileObject.tile(2),
       TileObject.tile(4),
       TileObject.tile(8),
