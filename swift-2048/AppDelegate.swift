@@ -14,6 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    /// i added all this stuff and removed the default view. it had this stupid issue where the game appeared on a modal view
+    /// so any swipe down just dismissed the game lol. Got this from a video on youtube and it works great!
+    // create a window from the size of the device
+    window = UIWindow(frame: UIScreen.main.bounds)
+    // select the view controller to start with and initialise it
+    //TODO: Make 4 the default dimension, but allow the user to select.
+    window?.rootViewController = NumberTileGameViewController(dimension: 4, startingTarget: 2048)
+    // make it visible and main
+    window?.makeKeyAndVisible()
     return true
   }
 

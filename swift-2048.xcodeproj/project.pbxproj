@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1AC563E3193DCE6000402286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC563E2193DCE6000402286 /* AppDelegate.swift */; };
-		1AC563E5193DCE6000402286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC563E4193DCE6000402286 /* ViewController.swift */; };
-		1AC563E8193DCE6000402286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC563E6193DCE6000402286 /* Main.storyboard */; };
 		1AC563EA193DCE6000402286 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC563E9193DCE6000402286 /* Images.xcassets */; };
 		1AE339B2193DCF110081FFA4 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE339B1193DCF110081FFA4 /* GameModel.swift */; };
 		1AE339B4193DF5FF0081FFA4 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE339B3193DF5FF0081FFA4 /* ModelTests.swift */; };
@@ -20,6 +18,8 @@
 		1AEF46D01BAE736400119D81 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEF46CF1BAE736400119D81 /* Launch Screen.storyboard */; };
 		1AF8F0B619403AA400A7049E /* AccessoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8F0B519403AA400A7049E /* AccessoryViews.swift */; };
 		1AF8F0B81941841000A7049E /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8F0B71941841000A7049E /* AuxiliaryModels.swift */; };
+		9B2E178224EE8AEF004ACA70 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E178124EE8AEF004ACA70 /* Constants.swift */; };
+		9B2E178424EE8C55004ACA70 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E178324EE8C55004ACA70 /* Buttons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +43,6 @@
 		1AC563DD193DCE6000402286 /* swift-2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-2048.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC563E1193DCE6000402286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC563E2193DCE6000402286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1AC563E4193DCE6000402286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1AC563E7193DCE6000402286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AC563E9193DCE6000402286 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1AC563EF193DCE6000402286 /* swift-2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-2048Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC563F4193DCE6000402286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		1AEF46CF1BAE736400119D81 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1AF8F0B519403AA400A7049E /* AccessoryViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessoryViews.swift; path = Views/AccessoryViews.swift; sourceTree = "<group>"; };
 		1AF8F0B71941841000A7049E /* AuxiliaryModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuxiliaryModels.swift; path = Models/AuxiliaryModels.swift; sourceTree = "<group>"; };
+		9B2E178124EE8AEF004ACA70 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9B2E178324EE8C55004ACA70 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,15 +98,14 @@
 		1AC563DF193DCE6000402286 /* swift-2048 */ = {
 			isa = PBXGroup;
 			children = (
-				1AEF46CF1BAE736400119D81 /* Launch Screen.storyboard */,
 				1AC563E2193DCE6000402286 /* AppDelegate.swift */,
-				1AC563E4193DCE6000402286 /* ViewController.swift */,
-				1AC563E6193DCE6000402286 /* Main.storyboard */,
+				1AEF46CF1BAE736400119D81 /* Launch Screen.storyboard */,
 				1AC563E9193DCE6000402286 /* Images.xcassets */,
+				9B2E178024EE8ADC004ACA70 /* Utilities */,
 				1AC563E0193DCE6000402286 /* Supporting Files */,
 				1AE339AF193DCE990081FFA4 /* Models */,
 				1AE339B0193DCEAE0081FFA4 /* Views */,
-				1AE8BEF3193EF260007592BA /* NumberTileGame.swift */,
+				9B2E177F24EE8A99004ACA70 /* Controllers */,
 				1AE8BEF1193EF1C7007592BA /* AppearanceProvider.swift */,
 			);
 			path = "swift-2048";
@@ -142,6 +141,7 @@
 			children = (
 				1AE339B1193DCF110081FFA4 /* GameModel.swift */,
 				1AF8F0B71941841000A7049E /* AuxiliaryModels.swift */,
+				9B2E178324EE8C55004ACA70 /* Buttons.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -154,6 +154,22 @@
 				1AE8BEF5193EF4B6007592BA /* TileView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		9B2E177F24EE8A99004ACA70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AE8BEF3193EF260007592BA /* NumberTileGame.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9B2E178024EE8ADC004ACA70 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9B2E178124EE8AEF004ACA70 /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +223,7 @@
 				TargetAttributes = {
 					1AC563DC193DCE6000402286 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = ZFU5YKYZ64;
 						LastSwiftMigration = 0900;
 					};
 					1AC563EE193DCE6000402286 = {
@@ -218,7 +235,7 @@
 			};
 			buildConfigurationList = 1AC563D8193DCE6000402286 /* Build configuration list for PBXProject "swift-2048" */;
 			compatibilityVersion = "Xcode 6.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -241,7 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AEF46D01BAE736400119D81 /* Launch Screen.storyboard in Resources */,
-				1AC563E8193DCE6000402286 /* Main.storyboard in Resources */,
 				1AC563EA193DCE6000402286 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +279,9 @@
 				1AE8BEF4193EF260007592BA /* NumberTileGame.swift in Sources */,
 				1AF8F0B619403AA400A7049E /* AccessoryViews.swift in Sources */,
 				1AE8BEF6193EF4B6007592BA /* TileView.swift in Sources */,
-				1AC563E5193DCE6000402286 /* ViewController.swift in Sources */,
 				1AE8BEF2193EF1C7007592BA /* AppearanceProvider.swift in Sources */,
+				9B2E178224EE8AEF004ACA70 /* Constants.swift in Sources */,
+				9B2E178424EE8C55004ACA70 /* Buttons.swift in Sources */,
 				1AC563E3193DCE6000402286 /* AppDelegate.swift in Sources */,
 				1AE339B2193DCF110081FFA4 /* GameModel.swift in Sources */,
 				1AF8F0B81941841000A7049E /* AuxiliaryModels.swift in Sources */,
@@ -294,17 +311,6 @@
 			targetProxy = 1AE8BEF7193F1090007592BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1AC563E6193DCE6000402286 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1AC563E7193DCE6000402286 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1AC563F7193DCE6000402286 /* Debug */ = {
@@ -351,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -397,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -410,10 +416,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZFU5YKYZ64;
 				INFOPLIST_FILE = "swift-2048/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "f3nghuang.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "lownotelee.swift-2048";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -424,10 +431,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZFU5YKYZ64;
 				INFOPLIST_FILE = "swift-2048/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "f3nghuang.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "lownotelee.swift-2048";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
