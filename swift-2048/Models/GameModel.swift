@@ -137,9 +137,7 @@ class GameModel : NSObject {
     
     func addToGameboardStack (add gameboard: SquareGameboard<TileObject>) {
         gameboardStack.insert(gameboard, at: 0)
-        print("added to stack")
         while gameboardStack.count > 10 {
-            print("stack trimmed")
             gameboardStack.removeLast()
         }
     }
@@ -156,7 +154,6 @@ class GameModel : NSObject {
     // clears the board and loads the board with tiles from the previous move
     func setBoardFromState(with board: SquareGameboard<TileObject>) {
         clearBoard()
-        print("[GAME_MODEL] [SetBoardFromState] eh")
         for x in 0..<dimension {
             for y in 0..<dimension {
                 if case let .tile(value) = board[x,y] {

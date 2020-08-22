@@ -92,7 +92,6 @@ class NumberTileGameViewController : UIViewController, GameModelProtocol {
     
     // creates a board object and clears it? Dont know why it has to make a new object
     func clearBoard() {
-        //print("[NTG-CB]")
         assert(board != nil)
         let b = board!
         b.clearBoard()
